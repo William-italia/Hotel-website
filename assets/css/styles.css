@@ -1,6 +1,6 @@
-/* root */
+
 :root {
-  --primary-color: #f7c08a
+  --primary-color: #f7c08a;
 }
 
 /* reset css */ 
@@ -41,26 +41,42 @@ padding: 0 20px;
   color: var(--primary-color);
 }
 
-.lead {
-  font-size: 20px;
-
-}
-
 .btn {
   display: inline-block;
   font-size: 18px;
-  color: #fff;
-  background: #333;
   padding: 13px 20px;
+  background-color: #333;
   border: none;
   cursor: pointer;
 }
 
 .btn:hover {
+  color: #333;
   background-color: var(--primary-color);
+}
+
+.btn-light {
+  background: #ddd;
   color: #333;
 }
 
+.lead {
+  font-size: 20px;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-primary {
+  background: #333;
+  color: #f7c08a;
+}
 /* NavBar */
 
 #navbar {
@@ -95,25 +111,48 @@ padding: 0 20px;
 }
 
 /* Showcase */
-#showcase  {
+#showcase {
   background: url(../img/showcase.jpg) no-repeat center center/cover;
   height: 600px;
 }
 
 #showcase .showcase-content {
-  color: #fff;
+  color: #ddd;
   text-align: center;
   padding-top: 170px;
 }
 
-#showcase .showcase-content h2 {
+#showcase .showcase-content h2{
   font-size: 60px;
   line-height: 1.2em;
 }
 
-#showcase .showcase-content p {
+#showcase .showcase-content p{
   padding-bottom: 20px;
   line-height: 1.7em;
 }
 
+/* home info */
+#home-info {
+  height: 500px;
+}
 
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url(../img/photo-1.jpg) no-repeat center/cover;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px; 
+  overflow: hidden;
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
