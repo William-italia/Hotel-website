@@ -41,6 +41,7 @@ p {
 }
 
 .btn {
+  color: #fff;
   display: inline-block;
   background: #333;
   padding: 13px 20px;
@@ -175,7 +176,7 @@ line-height: 1.2em;
 
 /* Features */
 
-.features .box {
+ .box {
   float: left;
   width: 33.3%;
   text-align: center;
@@ -192,6 +193,7 @@ line-height: 1.2em;
   float: right;
   width: 50%;
   min-height: 100%;
+
 }
 
 .about-info .info-right img{
@@ -202,29 +204,29 @@ line-height: 1.2em;
 }
 
 .about-info .info-left {
-  float: left;
-  width: 50%;
-  min-height: 100%;
+float: left;
+width: 50%;
+min-height: 100%;
 }
 
 /* Testimonials */
 .testimonials {
   height: 600px;
-  background: url(../img/test-bg.jpg) no-repeat center center/cover;
+  background: url(../img/test-bg.jpg);
   padding-top: 100px;
 }
 
 .testimonials h2 {
-  color: #fff;
-  text-align: center;
-  padding-bottom: 40px;
+ text-align: center;
+ color: #fff;
+ padding-bottom: 50px;
 }
 
 .testimonials .testemonial {
-  padding: 20px;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  opacity: 0.9;
+ padding: 20px;
+ margin-bottom: 40px;
+ border-radius: 5px;
+ opacity: 0.9;
 }
 
 .testimonials .testemonial img {
@@ -232,11 +234,37 @@ line-height: 1.2em;
   width: 100px;
   margin-right: 20px;
   border-radius: 50%;
+}  
+
+/* contact form */
+.contact-form .form-group {
+  margin-bottom: 20px;
+
 }
 
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
 
+}
 
+.contact-form input, 
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
 
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
 /* main footer */
 .main-footer {
   text-align: center;
